@@ -51,10 +51,6 @@ header p {
   font-weight: bold;
 }
 
-/* main {
-  padding: 10%;
-} */
-
 a {
   color: gray;
 }
@@ -67,10 +63,6 @@ a {
 h1 {
   font-size: 3rem;
 }
-
-/* #about {
-  padding: ;
-} */
 
 #about img {
   width: 100%;
@@ -88,7 +80,10 @@ h1 {
 
 #works {
   background-color: rgb(139, 185, 212);
-  padding: 10% 0%;
+  padding: 10% 10%;
+}
+#works p {
+  margin-bottom: 3rem;
 }
 
 .items {
@@ -99,43 +94,16 @@ h1 {
 }
 
 #works img {
-  width: 30%;
+  width: 100%;
 }
 
 #works a:hover {
   opacity: 0.5;
 }
 
-#works .items p{
+#works p{
   color: #ffffff;
 }
-
-
-/* 
-.items {
-  display: flex;
-  grid-template-columns: 7.5rem 5rem 5rem 5rem 5rem;
-  justify-content: space-around;
-  gap: 3rem;
-}
-.categoly li {
-  margin-bottom: 1rem;
-  grid-column: 1 / 2;
-  text-align: right;
-}
-.percentage {
-  grid-column-start: 2;
-  grid-column-end: 6;
-  width: 500%;
-} */
-
-/* .items {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 3rem;
-  margin: 5rem;
-} */
 
 #skills div {
   display: flex;
@@ -153,52 +121,83 @@ h1 {
   font-weight: bold;
 }
 
+.box {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
 .box1, .box8 {
   background-color: rgb(203, 143, 198);
   width: 80%;
+  animation-name: stretch80;
+  animation-duration: 2s;
+  animation-timing-function: linear;
 }
 
 .box2, .box4, .box7 {
   background-color: rgb(139, 185, 212);
   width: 70%;
+  animation-name: stretch70;
+  animation-duration: 2s;
+  animation-timing-function: linear;
 }
 
 .box3, .box6 {
   background-color: rgb(140, 122, 157);
   width: 60%;
+  animation-name: stretch60;
+  animation-duration: 2s;
+  animation-timing-function: linear;
 }
 
 .box5 {
   background-color: gray;
   width: 50%;
+  animation-name: stretch50;
+  animation-duration: 2s;
+  animation-timing-function: linear;
 }
+
 
 .measure {
   text-align: left;
 }
 
+@keyframes stretch50 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
 
-/* tr {
-  height: 2rem;
-  width: 100%;
+@keyframes stretch60 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
 }
-.name {
-  text-align: right;
+@keyframes stretch70 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
 }
-.persentage {
-  width: 100%;
-  padding-left: 1rem;
-  text-align: left;
-  background-color: aqua;
+
+@keyframes stretch80 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
 }
-.bar1, .bar8 {
-  background-color: aqua;
-  width: 80%;
-}
-.bar2, .bar4, .bar7 {
-  background-color: blanchedalmond;
-  width: 70%;
-} */
 
 button {
   background-color: #ffffff;
@@ -207,8 +206,16 @@ button {
   border-radius: 50%;
   border-color: gray;
 }
+button:hover {
+  background-color: rgb(213, 224, 231);
+}
 .top_link {
   position: fixed;
   bottom: 15px;
   right: 25px; 
 }
+
+
+/* @media screen (max-width:) {
+  
+} */
