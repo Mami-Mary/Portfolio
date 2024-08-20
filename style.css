@@ -1,3 +1,4 @@
+/* smartphone-first */
 html, body {
   margin: 0;
   padding: 0;
@@ -50,7 +51,7 @@ footer h1 {
 }
 
 header h1, footer h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 header p {
   font-weight: bold;
@@ -70,16 +71,16 @@ h1 {
 
 /* About me */
 #about img {
-  width: 100%;
+  width: 35%;
   border-radius: 50%;
 }
 
-.contents {
+/* .contents {
   display: flex;
-}
+} */
 
 #about .caption {
-  /* padding-left: 0%; */
+  /* padding-left: 5%; */
   text-align: left;
 }
 
@@ -230,17 +231,26 @@ button:hover {
   #about img {
     width: 80%;
   }
+  #about .caption {
+    padding-left: 5%;
+  }
+  .contents {
+    display: flex;
+  }
   #works img {
     width: 340px;
   }
 }
 
-/* for smartphone */
-@media screen and (max-width:767px) {
+/* for desktop */
+@media screen and (min-width:1000px) {
   #about img {
-    width: 35%;
+    width: 100%;
+  }
+  #about .caption {
+    padding-left: 5%;
   }
   .contents {
-    display: block;
+    display: flex;
   }
 }
