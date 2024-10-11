@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
 /* smartphone-first */
 html, body {
   margin: 0;
@@ -8,15 +10,22 @@ html, body {
 }
 
 body {
-  /* margin: 0px; */
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: white;
+  font-family: "Merriweather", serif;
+  color: gray;
+  font-size: 1.2rem;
 }
 
 header, footer {
-  /* height: fit-content; */
-  padding: 1.5rem;
-  background-color: rgb(139, 185, 212);
+  background-color: rgb(40, 60, 71);
+  color: #ffffff;
+}
+
+header {
+  background-image: url(images/banner.JPG);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 li {
@@ -28,91 +37,77 @@ a {
   color: gray;
 }
 
-header a {
-  color: white;
-}
-
 nav ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   margin: 0%;
   padding: 1.5rem;
-  gap: 2rem
-  ;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
 }
 
 nav a:hover {
   color: gray;
 }
 
-footer h1 {
-  padding: 10%;
+h1 {
+  font-size: 3rem;
+  border-bottom: solid gray;
 }
 
 header h1, footer h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
+  border-bottom: none;
+}
+
+.text {
+  margin: 2rem;
+  margin-top: 10rem;
 }
 header p {
   font-weight: bold;
-}
-
-#about, #skills {
-  color: gray;
+  font-size: 1rem;
 }
 
 #about, #works, #skills {
   padding: 2rem;
 }
 
-h1 {
-  font-size: 3rem;
-}
-
 /* About me */
-#about img {
-  width: 35%;
+.container img {
+  width: 60%;
   border-radius: 50%;
 }
 
-/* .contents {
-  display: flex;
-} */
+.account img {
+  width: 15%;
+  border-radius: 0%;
+}
 
 #about .caption {
-  /* padding-left: 5%; */
   text-align: left;
 }
 
-.caption a:hover {
-  color: rgb(177, 177, 177);
-}
-
 /* Works */
-#works {
-  background-color: rgb(139, 185, 212);
-}
-#works p {
-  margin-bottom: 3rem;
-}
-
 .items {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
+  margin-top: 3rem;
 }
 
 #works img {
   width: 100%;
+  filter: drop-shadow(2px 2px 7px rgb(195, 195, 195));
 }
 
 #works a:hover {
   opacity: 0.5;
-}
-
-#works p{
-  color: #ffffff;
 }
 
 /* Skills */
@@ -170,7 +165,6 @@ h1 {
   animation-timing-function: linear;
 }
 
-
 .measure {
   text-align: left;
 }
@@ -226,16 +220,30 @@ button:hover {
   right: 25px; 
 }
 
-/* for tablet */
+footer {
+  padding: 1rem;
+}
+
+/* for tablet & desktop */
 @media screen and (min-width:768px) {
-  #about img {
-    width: 80%;
+  header h1 {
+    margin-top: 5rem;
   }
-  #about .caption {
+  .text {
+    margin-top: 3rem;
+  }
+  .container img {
+    width: 45%;
+  }
+  /* #about .info {
     padding-left: 5%;
+  } */
+  .account img {
+    width: 15%;
   }
-  .contents {
+  .container {
     display: flex;
+    justify-content: center;
   }
   #works img {
     width: 340px;
@@ -243,14 +251,20 @@ button:hover {
 }
 
 /* for desktop */
-@media screen and (min-width:1000px) {
-  #about img {
+/* @media screen and (min-width:1000px) {
+  .image img {
     width: 100%;
   }
-  #about .caption {
+  .image {
+    width: 50%;
+  }
+  #about .info {
     padding-left: 5%;
   }
-  .contents {
+  .account img {
+    width: 20%;
+  }
+  .container {
     display: flex;
   }
-}
+} */
