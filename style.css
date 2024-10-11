@@ -16,7 +16,7 @@ body {
 }
 
 header, footer {
-  background-color: rgb(40, 60, 71);
+  background-color: rgb(10, 24, 23);
   color: #ffffff;
 }
 
@@ -59,14 +59,14 @@ h1 {
   border-bottom: solid gray;
 }
 
-header h1, footer h1 {
+header h1 {
   font-size: 4.5rem;
   border-bottom: none;
 }
 
 .text {
   margin: 2rem;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 header p {
   font-weight: bold;
@@ -78,14 +78,15 @@ header p {
 }
 
 /* About me */
-.container img {
+.profile img {
   width: 60%;
   border-radius: 50%;
 }
 
 .account img {
-  width: 15%;
+  width: 10%;
   border-radius: 0%;
+  padding: 0.5rem;
 }
 
 #about .caption {
@@ -204,21 +205,21 @@ header p {
   }
 }
 
-button {
-  background-color: #ffffff;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  border-color: gray;
+.button {
+  margin-top: 3rem;
 }
-button:hover {
-  background-color: rgb(213, 224, 231);
+
+.button a {
+  text-decoration: underline;
 }
-.top_link {
+.button a:hover {
+  color: rgb(199, 216, 204);
+}
+/* .top_link {
   position: fixed;
   bottom: 15px;
   right: 25px; 
-}
+} */
 
 footer {
   padding: 1rem;
@@ -232,18 +233,19 @@ footer {
   .text {
     margin-top: 3rem;
   }
-  .container img {
-    width: 45%;
+  .profile {
+    width: 60%;
   }
-  /* #about .info {
-    padding-left: 5%;
-  } */
+  .profile img {
+    width: 100%;
+  }
   .account img {
     width: 15%;
   }
   .container {
     display: flex;
     justify-content: center;
+    gap: 2rem;
   }
   #works img {
     width: 340px;
